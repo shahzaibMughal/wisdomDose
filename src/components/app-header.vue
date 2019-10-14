@@ -166,6 +166,7 @@
         position: relative;
         z-index: 0;
         padding-top: gap(1);
+        margin-bottom: gap(4);
 
         &:after {
             content: " ";
@@ -396,12 +397,15 @@
         #nav_close_btn, .search-input , .social-nav{
             display: none;
         }
+        header{
+            margin-bottom: gap(5); // fix
+        }
         .container{
             width: 100%;
             background: $white;
             align-self: flex-end;
             @include shadow();
-            top: 60px;
+            top: gap(4);
             z-index: 1000;
             position: relative;
         }

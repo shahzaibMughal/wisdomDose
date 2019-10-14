@@ -2,13 +2,19 @@
     <div id="app">
         <app-header
                 :quote-of-the-day="quoteOfTheDay"
-                :menu-items="menuItems"
-        ></app-header>
+                :menu-items="menuItems">
+        </app-header>
+        <CategoriesBar :categories="categories"></CategoriesBar>
     </div>
 </template>
 
 <script>
+
+
+
     export default {
+
+
         data() {
             return {
                 quoteOfTheDay: {
@@ -38,6 +44,25 @@
                         title: "Popular Quotes",
                         link: "/category/popular-quotes"
                     }
+                ],
+                categories:[
+                    { name: "Category 1" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 2" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 3" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 4" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 5" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 6" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 7" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 8" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 9" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 10" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 11" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 12" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 13" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 14" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 15" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+                    { name: "Category 16" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
+
                 ],
 
             }
