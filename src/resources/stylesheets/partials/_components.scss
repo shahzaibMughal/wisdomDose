@@ -1,0 +1,17 @@
+// this file contains all elements styles, such as button, link, icons, ...
+
+
+
+
+.icon, svg{
+    fill: $black;
+    width: 24px;
+    height: 24px;
+    padding: gap(1);
+    @include onclickScaleDownEffect;
+}
+a{
+    text-decoration: none;
+    color: $primary-color;
+
+}
