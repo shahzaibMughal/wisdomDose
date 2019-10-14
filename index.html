@@ -3,11 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wisdomdose</title>
+    <title>Wisdom Dose</title>
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600,800&display=swap" rel="stylesheet">
+    <script src="src/resources/scripts/modernizr.custom.js"></script>
   </head>
   <body>
     <div id="app"></div>
     <script src="/dist/build.js"></script>
+    <script src="./src/resources/scripts/masonry.pkgd.min.js"></script>
+    <script src="./src/resources/scripts/imagesloaded.js"></script>
+    <script src="./src/resources/scripts/classie.js"></script>
+    <script src="./src/resources/scripts/AnimOnScroll.js"></script>
+    <script>
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
+    </script>
   </body>
 </html>

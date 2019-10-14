@@ -13,5 +13,25 @@
 a{
     text-decoration: none;
     color: $primary-color;
+}
+
+.btn{
+    padding: gap(1.5) gap(4);
+    border-radius: gap(4);
+    background: $primary-color;
+    color: $white;
+    font-weight: $font-medium;
+    margin: gap(3) auto;
+    font-size: 1.2em;
+    border: none;
+    text-align: center;
+    display: table;
+    outline: none;
+    cursor: pointer;
+    @include onclickBtnEffect;
+    &:hover{
+        background: darken($primary-color,10%);
+    }
 
 }
+

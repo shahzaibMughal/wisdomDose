@@ -5,15 +5,14 @@
                 :menu-items="menuItems">
         </app-header>
         <CategoriesBar :categories="categories"></CategoriesBar>
+        <grid :quotes="quotes"></grid>
+        <a href="#" class="btn"> View All Quotes</a>
+        <app-footer></app-footer>
     </div>
 </template>
 
 <script>
-
-
-
     export default {
-
 
         data() {
             return {
@@ -64,7 +63,248 @@
                     { name: "Category 16" ,link:"/abc", backgroundImage: "https://picsum.photos/193/62" },
 
                 ],
-
+                quotes:[
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/24/a4/14/24a414f32bf6dbaa82a578c5f7577602.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/b4/52/3c/b4523cf8c70b1e0a2b0fcd5ad991e3a2.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/7a/70/d2/7a70d2d911152df944e2643b24ff48b5.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/ff/2c/a4/ff2ca4a5aced507a88c90303dfa77902.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/1e/ea/72/1eea72c82e7e23a3c5ea69d0edee7922.jpg'
+                    },
+                    {
+                        quoteString: 'This is the Quote',
+                        link:   "#",
+                        img: 'https://i.pinimg.com/564x/eb/dd/10/ebdd104d7d545165f62f9f91412cd696.jpg'
+                    },
+                ],
             }
         }
     }

@@ -29,3 +29,10 @@ $font-bold : 800;
     }
 }
 
+@mixin onclickBtnEffect(){
+    &:active {
+        background: black;
+    }
+}
+
+
